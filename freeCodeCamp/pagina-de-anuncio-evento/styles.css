@@ -1,0 +1,29 @@
+body {
+    background-color: gray;
+}
+
+.bloco {
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    width: 80vw;
+    min-height: calc(100vh - 100px);
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+section {
+    background-color: red;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+hr {
+    height: 2px;
+    background-color:black;
+    width: 80%;
+}
