@@ -17,13 +17,26 @@ header, footer {
 }
 
 section {
-    background-color: red;
-    display: inline-block;
-    flex-wrap: nowrap;
+    background-color: white;
+    width: calc(100%/3);
+    
+}
+
+.recurso1 {
+    margin-left: 100px;
+}
+
+.recurso2 {
+    margin-left: 30px;
 }
 
 hr {
     height: 2px;
     background-color:black;
     width: 80%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
 }
