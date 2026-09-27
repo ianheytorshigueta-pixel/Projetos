@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+}
+
+.bloco {
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    width: 80vw;
+    min-height: calc(100vh - 100px);
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, footer {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: calc(100%/3);
+    
+}
+
+.recurso1 {
+    margin-left: 100px;
+}
+
+.recurso2 {
+    margin-left: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color:black;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
