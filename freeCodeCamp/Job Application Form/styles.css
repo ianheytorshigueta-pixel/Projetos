@@ -1,0 +1,129 @@
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    overflow: hidden;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px;
+    padding: 10px 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label:not(.botao), fieldset, button {
+    display: block;
+    margin-top: 10px; 
+}
+
+:is(#name, #email) {
+    padding: 10px;
+    width: 98%;
+    height: 10px;
+}
+
+select {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 99%;
+}
+
+input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    border: 2px solid gray;
+    vertical-align: bottom;
+    transition: all 0.3s ease;
+}
+
+input[type='radio']::before {
+    display: block;
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(3px, 3px) scale(0);
+    transition: all 0.2s ease;
+}
+
+input[type='radio']:checked::before {
+    transform: translate(3px, 3px) scale(1);
+    background-color: green;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/*
+Os elementos "input", "select" e "textarea" devem ter uma pseudo-classe ":invalid" que muda a cor da borda para vermelho quando uma entrada inválida é detectada.
+*/
+input:invalid, select:invalid, textarea:invalid {
+    border: 1px red solid;
+}
+
+/*
+Os elementos "input", "select" e "textarea" devem ter uma pseudo-classe ":valid" que muda a cor da borda para verde quando uma entrada válida é inserida.
+*/
+input:valid, select:valid, textarea:valid {
+    border: 1px green solid;
+}
+
+/*
+Adicione uma pseudo-classe ":focus" aos elementos "input" e "textarea" para mudar a cor da borda e remover o contorno padrão quando estiverem em foco.*/
+input:focus, textarea:focus {
+    border: 1px blue solid;
+    outline: none;
+}
+
+
+/*
+O elemento "button" deve ter uma pseudo-classe ":hover" que muda a cor de fundo quando o cursor estiver sobre ele.
+*/
+button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/*
+Use a pseudo-classe ":checked" em ".radio-group input[type="radio"]" para adicionar cor de borda, cor de fundo e sombra na caixa quando o botão de rádio estiver selecionado.
+*/
+.radio-group input[type='radio']:checked {
+    border: 2px green solid;
+    background-color: white;
+    box-shadow: green 1px 1px 5px;
+}
+
+/*
+Use a pseudo-classe ":checked" nos botões de rádio para mudar a cor do texto do "label" associado quando a opção estiver selecionada.
+*/
+.radio-group input:checked + label {
+    color: green;
+}
+
+/*
+Adicione uma pseudo-classe ":first-of-type" ao elemento "input" para estilizar o primeiro campo de entrada de forma diferente (por exemplo, cantos arredondados).
+*/
+
+input:first-of-type {
+    border-radius: 5px;
+}
