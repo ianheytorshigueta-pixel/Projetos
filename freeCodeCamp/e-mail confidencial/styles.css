@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+O elemento #email deve ter um padding de 50px, uma margem superior de 50px, uma width de 500px e um border de 2px.
+
+A largura total do elemento #email, incluindo paddings e bordas, deve ser 500px.
+*/
+
+#email {
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    border: 2px;
+    background-color: #FFF5EE;
+    border: 2px solid black;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.541);
+}
+
+/*
+Os elementos #confidential e #top-secret devem ter um display de inline-block.
+
+Os elementos #confidential e #top-secret devem ter um padding, uma margem esquerda e um border.
+*/
+
+#confidential, #top-secret {
+    display: inline-block;
+    border: 5px solid red;
+    color: red;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-left: 100px;
+
+/*
+Os elementos #confidential e #top-secret devem ser rotacionados usando um transform do CSS.
+*/
+
+}
+
+#confidential {
+    transform: rotate(-24deg);
+}
+
+#top-secret {
+    display: inline-block;
+    border: 5px solid red;
+    color: red;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-left: 200px;
+    transform: rotate(20deg);
+}
+
+/*
+Você deve ter pelo menos três elementos span com uma classe de blurred dentro de seus elementos de parágrafo.
+
+Você deve ter um seletor blurred que desfoca o elemento 3px usando um filtro do CSS.
+*/
+
+.blurred {
+    filter: blur(3px);
+}
